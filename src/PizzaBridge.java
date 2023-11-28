@@ -3,8 +3,7 @@ public abstract class PizzaBridge {
     PizzaBridge(Pizza pizza){
         this.pizza=pizza;
     }
-    abstract void makeCrust();
-    abstract void layerSauce();
+
     public String toString(){
         return ("this pizza has a "+pizza.getCrust()+" crust, "+pizza.getSauce()+" sauce, and it has "+pizza.getTopping()+" for toppings");
     }
