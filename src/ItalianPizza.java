@@ -1,12 +1,19 @@
-public class ItalianPizza implements Pizza{
-    private String italian=" with Bay Leaves and Oregano";
-    public String Pepperoni(){
-        return("Yummy pepperoni"+ italian);
+public class ItalianPizza extends PizzaBridge{
+    public ItalianPizza(Pizza pizza){
+        super(pizza);
     }
-    public String Veggie(){
-        return("Yummy Veggie"+ italian);
+    @Override
+    void makeCrust() {
+        pizza.setCrust("thin");
     }
-    public String Chicken(){
-        return("Yummy chicken"+ italian);
+
+    @Override
+    void layerSauce() {
+        pizza.setSauce("oil");
+    }
+
+    @Override
+    void addTopping(String topping) {
+        pizza.setTopping(topping);
     }
 }
