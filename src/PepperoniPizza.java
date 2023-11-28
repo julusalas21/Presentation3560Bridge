@@ -1,5 +1,5 @@
 public class PepperoniPizza implements Pizza{
-    private String topping="pepperoni";
+    private String topping="pepperonis";
     private String sauce;
     private String crust;
     public void setSauce(String sauce){

@@ -5,6 +5,6 @@ public abstract class PizzaBridge {
     }
 
     public String toString(){
-        return ("this pizza has a "+pizza.getCrust()+" crust, "+pizza.getSauce()+" sauce, and it has "+pizza.getTopping()+" for toppings");
+        return ("This pizza has a "+pizza.getCrust()+" crust, "+pizza.getSauce()+" sauce, and it has "+pizza.getTopping()+" for toppings.");
     }
 }
