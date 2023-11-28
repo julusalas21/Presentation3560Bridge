@@ -12,8 +12,4 @@ public class ItalianPizza extends PizzaBridge{
         pizza.setSauce("oil");
     }
 
-    @Override
-    void addTopping(String topping) {
-        pizza.setTopping(topping);
-    }
 }
